@@ -102,8 +102,8 @@ if (__name__ == "__main__"):
     
     # Read text
     with open(file_path, encoding="utf-8") as f:
-        text = " ".join(f.readlines())
-    
+        text = f.read()
+
     # Summarize text
     summerizer = TextSummarizer(text)
     summerizer.generate_summary()
