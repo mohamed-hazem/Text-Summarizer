@@ -10,9 +10,9 @@ from time import sleep
 colorama.init()
 # ----------------------------------------------- #
 
-# Download stop words & tokens [Runs only one time]
-# nltk.download("stopwords")
-# nltk.download("punkt")
+# Download stop words & tokens
+nltk.download("stopwords", quiet=True)
+nltk.download("punkt", quiet=True)
 # ----------------------------------------------- #
 
 TOP_SENTENCES = 5 # [if None, then it'll be half length of the original sentences]
